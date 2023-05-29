@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+{% block title %}Continents index{% endblock %}
+{% block body %}
+    {{ form_start(form) }}
+        {{ form_label(form.name) }}
+        {{ form_widget(form.name) }}
+        
+        {{ form_rest(form) }}
+        <button type="submit">Enregistrer</button>
+    {{ form_end(form) }}
+{% endblock %}
